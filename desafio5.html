@@ -1,266 +1,294 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .box1{
-position: relative;
-height: 100%;
-opacity: 0.7;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-        }
-        .cor{
-            background-color: antiquewhite;
-        }
-        *{
+<style>
+    
+    * {
         margin: 0;
         padding: 0;
     }
 
-    header{
-        position:fixed;
+    header {
+        position: fixed;
         top: 0;
         left: 0;
-        width:100%;
+        width: 100%;
     }
-    main{
+
+    main {
         margin-top: 260px;
     }
-    p{
+
+    p {
         text-align: justify;
         line-height: 1.5em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         padding: 20px;
+        background-color: burlywood;
     }
-    a{
+
+    a {
         text-decoration: none;
+
     }
-    a:hover{
-        color:rgb(255, 0, 0)
+
+    a:hover {
+        color: rgb(179, 125, 50);
     }
-    .menu_top{
+
+    .menu_top {
         width: 100%;
         height: 170px;
-        border-bottom: 3px solid rgb(110, 72, 14);
-        border-top: 10px solid rgb(116, 60, 7);
-        background-color: white;
+        border-bottom: 10px solid rgb(0, 0, 0);
+        border-top: 10px solid rgb(0, 0, 0);
+        background-color: rgb(131, 77, 2);
+
     }
-    .top_esp{
+
+    .top_esp {
         width: 140px;
         float: left;
-        padding:10px;
-    }
-    .top_dir{
-        float:left;
-        text-align: center;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-        font-size: 100px;
-        color: rgb(255, 64, 0);
-        padding-left: 35px;
-        padding-top: 20px;
-        background-color: antiquewhite;
-    }
-    .menu_dowm{
-        background-color: rgb(119, 58, 7);
-        height: 50px;
-        text-align: center;
-    }
-    .menu{
-        position: relative;
-        top: 15px;
-        border-right: solid 2px rgb(102, 59, 59); 
         padding: 10px;
     }
-    .clear{clear:both;}
 
-    .menu ul{
+    .top_dir {
+        float: left;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 130px;
+        color: rgb(252, 252, 252);
+
+        margin-left: 20%;
+
+    }
+
+    .top_dd {
+        float: right;
+
+    }
+
+    .menu_dowm {
+        background-color: rgb(188, 192, 213) height: 50px;
+        text-align: center;
+    }
+
+    .menu {
+        position: relative;
+        top: 15px;
+        border-right: solid 2px rgb(0, 0, 0);
+        padding: 10px;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .menu ul {
         text-align: center;
         margin: auto;
     }
-    .menu ul li{
-        background-color: rgb(119, 58, 7);
+
+    .menu ul li {
+        background-color: rgb(0, 0, 0);
         width: 20%;
         height: 40px;
         float: left;
-         display: inline;
-         text-align: center;
-         line-height: 40px;
-         position: relative;
-         text-align: center;
+        display: inline;
+        text-align: center;
+        line-height: 40px;
+        position: relative;
+        text-align: center;
 
     }
-    .menu ul li:hover{
-        background-color: black;
+
+    .menu ul li:hover {
+        background-color: rgb(0, 0, 0);
     }
-    .menu ul{
+
+    .menu ul {
         padding: 0;
         max-width: 90%;
     }
-        *{
-            margin: 0 auto;
-            padding: 0;
-        }
-        .menu{
-            background-color: rgb(142, 88, 7);
-            width: 100%;
-            height: 40px;
-        }
-        .menu ul{
-            padding: 0;
-            max-width: 500px;
-        }
-        .menu ul li{          
-            background-color: rgb(142, 88, 7);
-            background-color:  
-            color: white;
-            float: left;
-            width: 100px;
-            height: 40px;
-            display: inline-block;
-            text-align: center;
-            line-height: 40px;
-            position: relative;
-        }
-        .menu ul li:hover{
-            background-color:rgb(232, 55, 55); 
-        }
-        
-        .menu ul ul{
-            display: none;
-        }
-        .menu ul li:hover > ul{
-            display: block;
-        }
-        
-        .menu ul ul ul{
-            margin-left: 102px;
-            position: absolute;
-            top: 0px;
-        }
-        .menu ul ul li:hover{
-            background-color:rgb(215, 30, 27); 
-        }
-        .menu ul ul ul li:hover{
-            background-color:rgb(109, 22, 8); 
-        }
-        
-            .clear{
-                clear: both;
-        }
-        .principal{
- margin: solid black 3px;
- background-color: antiquewhite;
- }
- .box1 {
-background-image: url(pascoa\ ilustar.jpg);
 
-}
+    input {
+        background-image: url(IMG/lupaaaaaaaaaa.png);
+        background-repeat: no-repeat;
+        background-size: 10%;
+        background-position: right;
+        height: 30px;
+        width: 200px;
+        margin: 60px 30px;
+    }
 
-    </style>
-</head>
+    .fund {
+        background-color: rgb(168, 114, 39);
+        height: 50px;
+        width: auto;
+    }
+
+    .menu {
+        margin-top: -15;
+        background-color: rgb(177, 134, 71);
+        width: 100%;
+        height: 40px;
+    }
+
+    .menu ul {
+        padding: 0;
+        max-width: 600px;
+    }
+
+    .menu ul li {
+        background-color: rgb(103, 66, 14);
+        color: white;
+        float: left;
+        width: 150px;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        line-height: 40px;
+        position: relative;
+    }
+
+    .menu ul li:hover {
+        background-color: rgb(223, 157, 24);
+    }
+
+    .menu ul ul {
+        display: none;
+    }
+
+    .menu ul li:hover>ul {
+        display: block;
+    }
+
+    .menu ul ul ul {
+        margin-left: 102px;
+        position: absolute;
+        top: 0px;
+    }
+
+    .menu ul ul li:hover {
+        background-color: rgb(195, 123, 8);
+    }
+
+    .menu ul ul ul li:hover {
+        background-color: rgb(195, 123, 8);
+    }
+    .esq{
+       
+        width: 450px;
+        height: 450px;
+        float: left;
+        margin: 20px;
+     }
+     .meio{
+       
+        width: 450px;
+        height: 450px;
+        float: left;
+        margin: 20px;
+
+     }
+     .dir{
+     
+        width: 450px;
+        height: 450px;
+        float: left;
+        margin: 20px;
+
+     }
+</style>
+
 <body>
     <header>
-     <div class="principal"> </div>
         <div class="menu_top">
             <div class="top_esp">
                 <figure>
-                    <div class="cor">
-                    <img src="IMG/chocolate-7836231_640.png" height="100" width="100"> 
+                    <img src="IMG/chocolate-7836231_640.png" height="150" width="150">
                 </figure>
-                </div>
-                <div class="top_dir">
-                    chocolandia vip
-                    </div>
-     </div>
-               
-                    <div class="clear"></div>
-                
+            </div>
+            <div class="top_dir">
+                sufler black
+            </div>
+            <div class="top_dd">
+                <method="post" action="#">
+                    <input type="text" name="nome" placeholder="pesquisar">
+                    <button type="submit"></button>
+            </div>
+        </div>
+        <div class="menu_dowm">
+            <div class="menu">
+                <ul>
+                    <li>BOLOS
+                        <ul>
+                            <li>chocolate</li>
+                            <li>massa branca</li>
+                            <li>recheios
+                                <ul>
+                                    <li>nutella</li>
+                                    <li>leite ninho</li>
+                                </ul>
+                            </li>
+                            <li>abacaxi</li>
+                            <li>kit kat</li>
+                            <li>mousse </li>
+                        </ul>
+                    </li>
+                    <li>RECHEADOS
+                        <ul>
+                            <li>Bahia</li>
+                            <li>Pernambuco</li>
+                            <li>Ceara
+                                <ul>
+                                    <li>Capital</li>
+                                    <li>Interior</li>
+                                </ul>
+                            </li>
+                            <li>Sergipe</li>
+                            <li>Alagoas</li>
+                            <li>Rio G Norte</li>
+                        </ul>
+                    </li>
+                    <li>P/FESTA
+                        <ul>
+                            <li>Mato G. Sul</li>
+                            <li>Mato Grosso</li>
+                            <li>Goias
+                                <ul>
+                                    <li>Capital</li>
+                                    <li>Interior</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>ENCOMENDA
+                        <ul>
+                            <li>Minas Gerais</li>
+                            <li>São Paulo</li>
+                            <li>E. Santo
+                                <ul>
+                                    <li>Capital</li>
+                                    <li>Interior</li>
+                                </ul>
+                            </li>
+                            <li>Rio de Janeiro</li>
+                        </ul>
+                    </li>
                     
-    
-    <nav class="menu">
-        <ul>
-            <li>Ovos 
-                <ul>
-                    <li>200 g</li>
-                    <li>350 g</li>
-                    <li> 1kg
-                        <ul>
-                            <li>ovo branco</li>
-                            <li>ovo preto</li>
-                        </ul>
-                    </li>
-                    <li>vento</li>
-                    <li>Recheado</li>
-                    <li>Cremoso</li>
+                   
                 </ul>
-            </li>
-            <li>Trufas
-                <ul>
-                    <li>brigadeiro</li>
-                    <li>morango</li>
-                    <li>Maracujá
-                        <ul>
-                            <li>cremoso</li>
-                            <li>ao leite</li>
-                        </ul>
-                    </li>
-                    <li>Leite ninho</li>
-                    <li>Nutella</li>
-                    <li>Kinder ovo</li>
-                </ul>
-            </li>
-            <li>Centro Oeste
-                <ul>
-                    <li>Mato G. Sul</li>
-                    <li>Mato Grosso</li>
-                    <li>Goias
-                        <ul>
-                            <li>Capital</li>
-                            <li>Interior</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>Sudeste
-                <ul>
-                    <li>Minas Gerais</li>
-                    <li>São Paulo</li>
-                    <li>E. Santo
-                        <ul>
-                            <li>Capital</li>
-                            <li>Interior</li>
-                        </ul>
-                    </li>
-                    <li>Rio de Janeiro</li>
-                </ul>
-            </li>
-            <li>Sul
-                <ul>
-                    <li>Rio G. Sul</li>
-                    <li>Paraná</li>
-                    <li>Sana Catarina
-                        <ul>
-                            <li>Capital</li>
-                            <li>Interior</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        
-    </nav>
-    <div class="box1">
-        <img src="pascoa ilustar.jpg">
-    </div>
-    
-</header>
-<main>
-
-</main>
-</body>
-</html>
+            </div>
+        </div>
+    </header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis eos quas iusto voluptatibus distinctio inventore, hic recusandae sed velit architecto ut eveniet natus quisquam sequi, eum quos cumque suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis eos quas iusto voluptatibus distinctio inventore, hic recusandae sed velit architecto ut eveniet natus quisquam sequi, eum quos cumque suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis eos quas iusto voluptatibus distinctio inventore, hic recusandae sed velit architecto ut eveniet natus quisquam sequi, eum quos cumque suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis eos quas iusto voluptatibus distinctio inventore, hic recusandae sed velit architecto ut eveniet natus quisquam sequi, eum quos cumque suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis eos quas iusto voluptatibus distinctio inventore, hic recusandae sed velit architecto ut eveniet natus quisquam sequi, eum quos cumque suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis eos quas iusto voluptatibus distinctio inventore, hic recusandae sed velit architecto ut eveniet natus quisquam sequi, eum quos cumque suscipit.</p>
+        </div>
+        <img src="pexels-george-dolgikh-551816-2072158.jpg" width="1700" height="1150">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequuntur ratione ad aperiam laudantium accusamus impedit ullam praesentium quidem. Aut dolores nostrum unde assumenda optio amet iusto commodi blanditiis deserunt?  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio id eveniet quidem sapiente inventore neque, delectus non consequuntur labore cupiditate reprehenderit minima minus exercitationem ad, placeat explicabo qui quia est?  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate temporibus necessitatibus consequatur maxime suscipit reprehenderit quas, deserunt provident cumque, dolor, asperiores voluptas perspiciatis nam officia! Similique cum officiis quis dolores.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam aliquam asperiores voluptatibus iste aperiam, animi praesentium voluptatum veritatis eos iusto quasi omnis amet dolores pariatur! Totam praesentium sint consequatur veniam.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, autem aperiam fugit enim exercitationem illum in numquam vero, a quaerat similique! At, velit unde! Neque similique omnis dolores explicabo vel!</p>
+        <div class="esq">
+            <img src="ovo pacoa 1.png" width="400" height="400">
+        </div>
+        <div class="meio">
+            <img src="ovo pacoa 2.png" width="420" height="420">
+        </div>
+        <div class="dir">
+            <img src="ovo pacoa 3.png" width="400" height="400">
+        </div>
+        <div class="clear"></div>
+   
