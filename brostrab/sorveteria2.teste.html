@@ -2,49 +2,152 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Pedido de Sorvete</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorveteria Artesanal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fffefc;
+      color: #444;
+    }
+
+    header {
+      background-color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #b58d57;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #b58d57;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1590080876608-9224a3e9df15') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+    }
+
+    .section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      color: #b58d57;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      max-width: 600px;
+      margin: auto;
+      font-size: 1.1em;
+    }
+
+    .sabores {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .sabor {
+      background: #fefefe;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .sabor img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #f7f5f0;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-
   <header>
-    <img src="imagens/logo.png" class="logo" alt="Logo">
+    <div class="logo">Sorveteria São Paulo</div>
     <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sabores.html">Sabores</a></li>
-        <li><a href="historia.html">História</a></li>
-        <li><a href="localizacao.html">Localização</a></li>
-        <li><a href="pedido.html">Peça Agora</a></li>
-      </ul>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#sabores">Sabores</a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
 
-  <main class="content">
-    <h1>Faça seu Pedido</h1>
-    <form action="#" method="post">
-      <label for="nome">Nome:</label><br>
-      <input type="text" id="nome" name="nome" required><br><br>
+  <section class="hero">
+    <h1>O verdadeiro sabor do gelato artesanal</h1>
+  </section>
 
-      <label for="sabores">Escolha o sabor:</label><br>
-      <select id="sabores" name="sabor" required>
-        <option value="">-- Escolha um sabor --</option>
-        <option value="morango">Morango</option>
-        <option value="chocolate">Chocolate Belga</option>
-        <option value="manga">Manga com Pimenta</option>
-        <option value="ninho">Leite Ninho com Nutella</option>
-      </select><br><br>
+  <section id="sobre" class="section">
+    <h2>Sobre Nós</h2>
+    <p>Inspirados na tradição italiana e apaixonados por ingredientes naturais, oferecemos gelatos artesanais feitos com carinho e qualidade em cada detalhe.</p>
+  </section>
 
-      <label for="quantidade">Quantidade:</label><br>
-      <input type="number" id="quantidade" name="quantidade" min="1" max="10" required><br><br>
+  <section id="sabores" class="section">
+    <h2>Nossos Sabores</h2>
+    <div class="sabores">
+      <div class="sabor">
+        <img src="https://images.unsplash.com/photo-1589712235274-e98e1f4d2cf4" alt="Chocolate">
+        <p>Chocolate Belga</p>
+      </div>
+      <div class="sabor">
+        <img src="https://images.unsplash.com/photo-1589710803412-c2e215e8d718" alt="Morango">
+        <p>Morango com pedaços</p>
+      </div>
+      <div class="sabor">
+        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0" alt="Pistache">
+        <p>Pistache Siciliano</p>
+      </div>
+    </div>
+  </section>
 
-      <label for="endereco">Endereço de entrega:</label><br>
-      <textarea id="endereco" name="endereco" rows="3" required></textarea><br><br>
+  <section id="contato" class="section">
+    <h2>Contato</h2>
+    <p>Entre em contato pelo WhatsApp: (11) 90000-0000 ou visite nossa loja em São Paulo.</p>
+  </section>
 
-      <button type="submit">Enviar Pedido</button>
-    </form>
-  </main>
-
-  <footer>© 2025 Sorveteria São Paulo</footer>
+  <footer>
+    © 2025 Sorveteria São Paulo. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
