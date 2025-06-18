@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Média Ponderada</title>
+</head>
+<body>
+  <h1>Calcular Média Ponderada</h1>
+
+  <label>Nota A (peso 2): <input type="number" id="notaA" step="0.1"></label><br><br>
+  <label>Nota B (peso 3): <input type="number" id="notaB" step="0.1"></label><br><br>
+  <label>Nota C (peso 5): <input type="number" id="notaC" step="0.1"></label><br><br>
+
+  <button onclick="calcularMedia()">Calcular Média</button>
+
+  <h2 id="resultado"></h2>
+
+  <script>
+    function calcularMedia() {
+      const A = parseFloat(document.getElementById('notaA').value);
+      const B = parseFloat(document.getElementById('notaB').value);
+      const C = parseFloat(document.getElementById('notaC').value);
+
+      if (isNaN(A) || isNaN(B) || isNaN(C)) {
+        document.getElementById('resultado').innerText = "Por favor, preencha todas as notas.";
+        return;
+      }
+
+      const media = (A * 2 + B * 3 + C * 5) / 10;
+      document.getElementById('resultado').innerText = "Média do aluno: " + media.toFixed(2);
+    }
+  </script>
+</body>
+</html>
